@@ -1,0 +1,318 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#020617;
+  color:white;
+}
+
+/* HERO SECTION */
+.web{
+  min-height:100vh;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),url(me.jpeg);
+  background-size:cover;
+  background-position:center;
+  padding:30px;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.port{
+  font-size:32px;
+}
+
+.port span{
+  color:#ff4d5a;
+}
+
+nav ul{
+  display:flex;
+}
+
+nav ul li{
+  list-style:none;
+  margin:15px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  color:#ff4d5a;
+}
+
+.menu-btn{
+  display:none;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* HERO TEXT */
+.name{
+  margin-top:120px;
+  max-width:500px;
+}
+
+.name h1{
+  font-size:50px;
+  margin:10px 0;
+}
+
+.name span{
+  color:#ff4d5a;
+}
+
+/* HERO EMAIL FORM */
+form{
+  position:relative;
+  margin-top:20px;
+}
+
+form input[type=email]{
+  width:100%;
+  padding:14px;
+  border-radius:30px;
+  border:none;
+}
+
+form input[type=submit]{
+  position:absolute;
+  right:5px;
+  top:5px;
+  padding:8px 20px;
+  background:#ff4d5a;
+  border:none;
+  border-radius:30px;
+  color:white;
+}
+
+/* ABOUT SECTION */
+.sec{
+  padding:80px 20px;
+}
+
+.div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.div img{
+  width:350px;
+  border-radius:10px;
+}
+
+.About{
+  max-width:500px;
+}
+
+.About h2{
+  font-size:40px;
+  margin-bottom:20px;
+  color:white;
+}
+
+.About h5{
+  font-size:20px;
+  margin-bottom:20px;
+  color:white;
+}
+
+.About p{
+  color:white;
+  line-height:26px;
+  margin-bottom:15px;
+}
+
+/* ABOUT BUTTON */
+.About button {
+  background: linear-gradient(135deg, #ff4d5a, #ff7b5a);
+  color: white;
+  padding: 12px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255,77,90,0.4);
+}
+
+.About button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255,77,90,0.6);
+  background: linear-gradient(135deg, #ff7b5a, #ff4d5a);
+}
+
+/* SERVICES */
+.services{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.services .title{
+  font-size:36px;
+  color:white;
+  margin-bottom:30px;
+}
+
+.box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  padding:30px;
+  width:280px;
+  border-radius:10px;
+  transition:.3s;
+  text-align:center;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card i{
+  font-size:40px;
+  color:#ff4d5a;
+  margin-bottom:10px;
+}
+
+.card h5{
+  font-size:20px;
+  margin-bottom:15px;
+  color:white;
+}
+
+.card p{
+  font-size:16px;
+  line-height:24px;
+  color:#cbd5e1;
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 20px;
+  text-align:center;
+  background:#0f172a;
+}
+
+.contact h2{
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact p{
+  color: #cbd5e1;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info{
+  margin-top: 20px;
+}
+
+.contact-info p{
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.contact-info a{
+  color: #ff4d5a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info a:hover{
+  text-decoration: underline;
+}
+
+.buttonsss{
+  background: #ff4d5a;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.buttonsss:hover{
+  background: #ff7b5a;
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.social{
+  margin-top:20px;
+  font-size:28px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.social a{
+  color:white;
+}
+
+.end{
+  margin-top:20px;
+  color:yellow;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+  .menu-btn{
+    display:block;
+  }
+
+  nav ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    background:#020617;
+  }
+
+  nav ul.active{
+    display:flex;
+  }
+
+  .name h1{
+    font-size:35px;
+  }
+
+  .div{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .box{
+    flex-direction:column;
+    align-items:center;
+  }
+}
